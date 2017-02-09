@@ -1,0 +1,283 @@
+
+Track2B2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000001d2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000015e  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000001  00800100  00800100  000001d2  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000001d2  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000204  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000038  00000000  00000000  00000240  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000092d  00000000  00000000  00000278  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000084e  00000000  00000000  00000ba5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000004e9  00000000  00000000  000013f3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000074  00000000  00000000  000018dc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00007602  00000000  00000000  00001950  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000e2  00000000  00000000  00008f52  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000028  00000000  00000000  00009034  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_macro  00000228  00000000  00000000  0000905c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	65 c0       	rjmp	.+202    	; 0xd0 <__vector_1>
+   6:	00 00       	nop
+   8:	7c c0       	rjmp	.+248    	; 0x102 <__vector_2>
+   a:	00 00       	nop
+   c:	4f c0       	rjmp	.+158    	; 0xac <__bad_interrupt>
+   e:	00 00       	nop
+  10:	4d c0       	rjmp	.+154    	; 0xac <__bad_interrupt>
+  12:	00 00       	nop
+  14:	4b c0       	rjmp	.+150    	; 0xac <__bad_interrupt>
+  16:	00 00       	nop
+  18:	49 c0       	rjmp	.+146    	; 0xac <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	47 c0       	rjmp	.+142    	; 0xac <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	45 c0       	rjmp	.+138    	; 0xac <__bad_interrupt>
+  22:	00 00       	nop
+  24:	43 c0       	rjmp	.+134    	; 0xac <__bad_interrupt>
+  26:	00 00       	nop
+  28:	41 c0       	rjmp	.+130    	; 0xac <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	3f c0       	rjmp	.+126    	; 0xac <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	3d c0       	rjmp	.+122    	; 0xac <__bad_interrupt>
+  32:	00 00       	nop
+  34:	3b c0       	rjmp	.+118    	; 0xac <__bad_interrupt>
+  36:	00 00       	nop
+  38:	39 c0       	rjmp	.+114    	; 0xac <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	37 c0       	rjmp	.+110    	; 0xac <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	35 c0       	rjmp	.+106    	; 0xac <__bad_interrupt>
+  42:	00 00       	nop
+  44:	33 c0       	rjmp	.+102    	; 0xac <__bad_interrupt>
+  46:	00 00       	nop
+  48:	31 c0       	rjmp	.+98     	; 0xac <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	2f c0       	rjmp	.+94     	; 0xac <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	2d c0       	rjmp	.+90     	; 0xac <__bad_interrupt>
+  52:	00 00       	nop
+  54:	2b c0       	rjmp	.+86     	; 0xac <__bad_interrupt>
+  56:	00 00       	nop
+  58:	29 c0       	rjmp	.+82     	; 0xac <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	27 c0       	rjmp	.+78     	; 0xac <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	25 c0       	rjmp	.+74     	; 0xac <__bad_interrupt>
+  62:	00 00       	nop
+  64:	23 c0       	rjmp	.+70     	; 0xac <__bad_interrupt>
+  66:	00 00       	nop
+  68:	21 c0       	rjmp	.+66     	; 0xac <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	1f c0       	rjmp	.+62     	; 0xac <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	1d c0       	rjmp	.+58     	; 0xac <__bad_interrupt>
+  72:	00 00       	nop
+  74:	1b c0       	rjmp	.+54     	; 0xac <__bad_interrupt>
+  76:	00 00       	nop
+  78:	19 c0       	rjmp	.+50     	; 0xac <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	17 c0       	rjmp	.+46     	; 0xac <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	15 c0       	rjmp	.+42     	; 0xac <__bad_interrupt>
+  82:	00 00       	nop
+  84:	13 c0       	rjmp	.+38     	; 0xac <__bad_interrupt>
+  86:	00 00       	nop
+  88:	11 c0       	rjmp	.+34     	; 0xac <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_clear_bss>:
+  98:	21 e0       	ldi	r18, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+
+000000a0 <.do_clear_bss_loop>:
+  a0:	1d 92       	st	X+, r1
+
+000000a2 <.do_clear_bss_start>:
+  a2:	a1 30       	cpi	r26, 0x01	; 1
+  a4:	b2 07       	cpc	r27, r18
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
+  a8:	45 d0       	rcall	.+138    	; 0x134 <main>
+  aa:	57 c0       	rjmp	.+174    	; 0x15a <_exit>
+
+000000ac <__bad_interrupt>:
+  ac:	a9 cf       	rjmp	.-174    	; 0x0 <__vectors>
+
+000000ae <wait>:
+				clock value is set. This is used by _delay_ms inside
+				util/delay.h
+Version :    	DMK, Initial code
+*******************************************************************/
+{
+	for (int i=0; i<ms; i++)
+  ae:	18 16       	cp	r1, r24
+  b0:	19 06       	cpc	r1, r25
+  b2:	6c f4       	brge	.+26     	; 0xce <wait+0x20>
+  b4:	20 e0       	ldi	r18, 0x00	; 0
+  b6:	30 e0       	ldi	r19, 0x00	; 0
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  b8:	ef ec       	ldi	r30, 0xCF	; 207
+  ba:	f7 e0       	ldi	r31, 0x07	; 7
+  bc:	31 97       	sbiw	r30, 0x01	; 1
+  be:	f1 f7       	brne	.-4      	; 0xbc <wait+0xe>
+  c0:	00 c0       	rjmp	.+0      	; 0xc2 <wait+0x14>
+  c2:	00 00       	nop
+  c4:	2f 5f       	subi	r18, 0xFF	; 255
+  c6:	3f 4f       	sbci	r19, 0xFF	; 255
+  c8:	28 17       	cp	r18, r24
+  ca:	39 07       	cpc	r19, r25
+  cc:	a9 f7       	brne	.-22     	; 0xb8 <wait+0xa>
+  ce:	08 95       	ret
+
+000000d0 <__vector_1>:
+inputs:
+outputs:
+notes:			Set PORTD.5
+Version :    	DMK, Initial code
+*******************************************************************/
+{
+  d0:	1f 92       	push	r1
+  d2:	0f 92       	push	r0
+  d4:	0f b6       	in	r0, 0x3f	; 63
+  d6:	0f 92       	push	r0
+  d8:	11 24       	eor	r1, r1
+  da:	8f 93       	push	r24
+	if(currentPos == 0x00){	//check if you haven't reached 00000000
+  dc:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <_edata>
+  e0:	81 11       	cpse	r24, r1
+  e2:	05 c0       	rjmp	.+10     	; 0xee <__vector_1+0x1e>
+		currentPos = 0x01;
+  e4:	81 e0       	ldi	r24, 0x01	; 1
+  e6:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+		PORTD = currentPos;
+  ea:	82 bb       	out	0x12, r24	; 18
+  ec:	04 c0       	rjmp	.+8      	; 0xf6 <__vector_1+0x26>
+	}else{
+		currentPos = currentPos >> 1;	// bitshift to next LED
+  ee:	85 95       	asr	r24
+  f0:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+		PORTD = currentPos;
+  f4:	82 bb       	out	0x12, r24	; 18
+	}
+}
+  f6:	8f 91       	pop	r24
+  f8:	0f 90       	pop	r0
+  fa:	0f be       	out	0x3f, r0	; 63
+  fc:	0f 90       	pop	r0
+  fe:	1f 90       	pop	r1
+ 100:	18 95       	reti
+
+00000102 <__vector_2>:
+inputs:
+outputs:
+notes:			Clear PORTD.5
+Version :    	DMK, Initial code
+*******************************************************************/
+{
+ 102:	1f 92       	push	r1
+ 104:	0f 92       	push	r0
+ 106:	0f b6       	in	r0, 0x3f	; 63
+ 108:	0f 92       	push	r0
+ 10a:	11 24       	eor	r1, r1
+ 10c:	8f 93       	push	r24
+	if(currentPos == 0x00){	//check if you haven't reached 00000000
+ 10e:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <_edata>
+ 112:	81 11       	cpse	r24, r1
+ 114:	05 c0       	rjmp	.+10     	; 0x120 <__vector_2+0x1e>
+		currentPos = 0x01;
+ 116:	81 e0       	ldi	r24, 0x01	; 1
+ 118:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+		PORTD = currentPos;
+ 11c:	82 bb       	out	0x12, r24	; 18
+ 11e:	04 c0       	rjmp	.+8      	; 0x128 <__vector_2+0x26>
+		}else{
+		currentPos = currentPos >> 1;	// bitshift to next LED
+ 120:	85 95       	asr	r24
+ 122:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+		PORTD = currentPos;
+ 126:	82 bb       	out	0x12, r24	; 18
+	}
+}
+ 128:	8f 91       	pop	r24
+ 12a:	0f 90       	pop	r0
+ 12c:	0f be       	out	0x3f, r0	; 63
+ 12e:	0f 90       	pop	r0
+ 130:	1f 90       	pop	r1
+ 132:	18 95       	reti
+
+00000134 <main>:
+
+int main (void)
+{
+	DDRD = 0xF0;	// port d input 7-4 output 3-0
+ 134:	80 ef       	ldi	r24, 0xF0	; 240
+ 136:	81 bb       	out	0x11, r24	; 17
+	currentPos = 0x10;	// set current position LED
+ 138:	80 e1       	ldi	r24, 0x10	; 16
+ 13a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+	PORTD = currentPos;
+ 13e:	82 bb       	out	0x12, r24	; 18
+
+	EICRA |= 0x0B;		// INT1 falling edge, INT0 rising edge 00001011
+ 140:	ea e6       	ldi	r30, 0x6A	; 106
+ 142:	f0 e0       	ldi	r31, 0x00	; 0
+ 144:	80 81       	ld	r24, Z
+ 146:	8b 60       	ori	r24, 0x0B	; 11
+ 148:	80 83       	st	Z, r24
+	EIMSK |= 0x03;		// Enable INT1 & INT0
+ 14a:	89 b7       	in	r24, 0x39	; 57
+ 14c:	83 60       	ori	r24, 0x03	; 3
+ 14e:	89 bf       	out	0x39, r24	; 57
+
+	sei();	// enable global interupt system
+ 150:	78 94       	sei
+
+	while(1){
+
+		wait(50);
+ 152:	82 e3       	ldi	r24, 0x32	; 50
+ 154:	90 e0       	ldi	r25, 0x00	; 0
+ 156:	ab df       	rcall	.-170    	; 0xae <wait>
+	}
+ 158:	fc cf       	rjmp	.-8      	; 0x152 <main+0x1e>
+
+0000015a <_exit>:
+ 15a:	f8 94       	cli
+
+0000015c <__stop_program>:
+ 15c:	ff cf       	rjmp	.-2      	; 0x15c <__stop_program>
